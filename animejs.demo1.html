@@ -377,7 +377,8 @@ border-color: transparent transparent #767EEF transparent;
   opacity: 0.8;
   border-radius: 2px;
   top:20px;
-  left: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .odc-wrapper {
@@ -658,11 +659,11 @@ let cta_button_hide = anime({
 //滑到底部
 let slidedown = anime({
     targets: '.order-details-container',
-    translateY: ['-560','-40px'],
+    translateY: ['-400','-40px'],
 	duartion: 1000,
     autoplay: false,
     begin: function(){
-      show_hideCTA("block");
+      //show_hideCTA("block");
       drawer_open = false;
     }
 })
@@ -670,10 +671,10 @@ let slidedown = anime({
 //拉到顶部
 let slideup = anime({
     targets: '.order-details-container',
-    translateY: ['-40px','-560px'],
+    translateY: ['-40px','-400px'],
     autoplay: false,
     begin: function(){
-     show_hideCTA("none");
+     //show_hideCTA("none");
     }
 })
 
